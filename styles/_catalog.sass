@@ -80,72 +80,72 @@
             padding-left: 320px
             &-menu
                 padding-left: 30px
-        .checkbox
-            display: flex
-            padding-left: 320px
-            &-item
-                display: flex
-                padding-right: 48px
-                font-family: Lato
-                font-size: 14px
-                font-style: normal
-                font-weight: 400
-                line-height: 17px
-                letter-spacing: 0em
-                text-align: left
-                align-content: center
-                cursor: pointer
-                padding-bottom: 5px
-                .after-img::after
-                    content: url(../img/catalog/open_down.svg)
-                    margin-left: 7px
-                &_menu
-                    position: relative
-                    .drop-menu
-                        margin-right: 9px
+.checkbox
+    display: flex
+    padding-left: 320px
+    &-item
+        display: flex
+        padding-right: 48px
+        font-family: Lato
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: 17px
+        letter-spacing: 0em
+        text-align: left
+        align-content: center
+        cursor: pointer
+        padding-bottom: 5px
+        .after-img::after
+            content: url(../img/catalog/open_down.svg)
+            margin-left: 7px
+        &_menu
+            position: relative
+            .drop-menu
+                margin-right: 9px
+                display: none
+                flex-direction: column
+                position: absolute
+                padding: 9px 30px 11px 9px
+                z-index: 1
+                top: 22px
+                left: -10%
+                width: 79px
+                height: 103px
+                background: #FFFFFF
+                box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+                box-sizing: border-box
+                &__box-label
+                    cursor: pointer
+                    display: flex
+                    height: 1em
+                    margin-bottom: 9px
+                    input[type="checkbox"]
                         display: none
-                        flex-direction: column
-                        position: absolute
-                        padding: 9px 30px 11px 9px
-                        z-index: 1
-                        top: 22px
-                        left: -10%
-                        width: 79px
-                        height: 103px
-                        background: #FFFFFF
-                        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
-                        box-sizing: border-box
-                        &__box-label
-                            cursor: pointer
-                            display: flex
-                            height: 1em
-                            margin-bottom: 9px
-                            input[type="checkbox"]
-                                display: none
-                            input[type="checkbox"] + .box
-                                width: 13px
-                                height: 13px
-                                border: 1px solid #EBEBEB
-                                background: url(../img/catalog/tick.svg) left top no-repeat
-                                background-size: 12px
-                                transition: 0.5s
-                            input[type="checkbox"]:checked + .box
-                                width: 13px
-                                height: 13px
-                                background: url(../img/catalog/tick.svg) -19px top no-repeat
-                            .box
-                                display: block
-                                margin-right: 9px
-                            .size-text
-                                font-family: Roboto
-                                font-style: normal
-                                font-weight: normal
-                                font-size: 14px
-                                line-height: 16px
-                                color: #6F6E6E
-                &_menu:hover
-                    .drop-menu
+                    input[type="checkbox"] + .box
+                        width: 13px
+                        height: 13px
+                        border: 1px solid #EBEBEB
+                        background: url(../img/catalog/tick.svg) left top no-repeat
+                        background-size: 12px
+                        transition: 0.5s
+                    input[type="checkbox"]:checked + .box
+                        width: 13px
+                        height: 13px
+                        background: url(../img/catalog/tick.svg) -19px top no-repeat
+                    .box
                         display: block
+                        margin-right: 9px
+                    .size-text
+                        font-family: Roboto
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 16px
+                        color: #6F6E6E
+        &_menu:hover
+            .drop-menu
+                display: block
 
 .mt
     margin-top: 59px
