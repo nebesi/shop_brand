@@ -1,14 +1,4 @@
-=sb()
-    display: flex
-    justify-content: center
-    align-content: center
-    height: 47px
-    width: 47px
-    background: rgba(42, 42, 42, 0.15)
-    top: 365px
-    padding: 9px
-    border: none
-    cursor: pointer
+
 .product
     .slider
         position: relative
@@ -42,7 +32,7 @@
                 width: 100%
     &__info
         position: relative
-        height: 400px
+        height: 581px
         margin: 0 auto
         z-index: 1
         top: 0
@@ -56,24 +46,49 @@
             padding: 64.5px 0 110px
             top: -19px
             border: 1px solid #EAEAEA
+            box-sizing: border-box
             &__heading
                 text-align: center
                 margin-bottom: 27px
+                font-family: Lato
+                font-style: normal
+                font-weight: 300
+                font-size: 14px
+                line-height: 17px
+                color: #F16D7F
             &__title
                 text-align: center
                 margin: 0 auto
                 margin-bottom: 48.4px
                 width: 253px
+                font-family: Lato
+                font-style: normal
+                font-weight: 300
+                font-size: 18px
+                line-height: 22px
+                color: #4D4D4D
             &__text
                 text-align: center
                 max-width: 555px
                 margin: 0 auto
                 margin-bottom: 32.3px
+                font-family: Lato
+                font-style: normal
+                font-weight: 300
+                font-size: 14px
+                line-height: 17px
+                color: #5E5E5E
             &__money
                 text-align: center
                 width: 56px
                 margin: 0 auto
                 margin-bottom: 65px
+                font-family: Lato
+                font-style: normal
+                font-weight: 300
+                font-size: 24px
+                line-height: 29px
+                color: #EF5B70
             .center-border
                 display: block
                 box-sizing: border-box
@@ -85,10 +100,43 @@
                 padding: 0
                 max-width: 600px
                 margin: 0 auto
+                display: flex
+                justify-content: center
+                margin-bottom: 48.4px
                 .checkbox-item
-
+                    padding: 0
+                .checkbox-item:not(:last-child)
+                    margin-right: 30px
+            .btn-add
+                height: 48.4px
+                width: 212px
+                display: flex
+                align-items: center
+                padding: 15px 0 9px 24px
+                margin: 0 auto
+                border: 1px solid #FF6A6A
+                background: none
+                &__img
+                    display: inline-block
+                    margin-right: 23px
+                    path
+                        fill: #F26376
+                &__text
+                    color: #F26376
+                    font-family: Lato
+                    font-size: 16px
+                    font-weight: 400
+                    text-align: left
+                    height: 100%
+    .catalog
+        margin-top: 128px
+        &__container
+            justify-content: center
+            .mr:not(:last-child)
+                margin-right: 30PX
+    .mb
+        margin-bottom: 128px
 .nm
     margin-bottom: 0
-
 .control-img
     display: block
