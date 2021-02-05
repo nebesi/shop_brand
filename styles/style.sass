@@ -1,4 +1,5 @@
 @import 'mixin'
+@import 'menu'
 @import 'cart'
 @import 'catalog'
 @import 'product'
@@ -28,18 +29,22 @@ a
 
   &__search
     margin-left: 41px
-
+  &__right
+    display: flex
+    align-items: center
   &__right a:not(:last-child)
     margin-right: 33px
 
 .promo
   display: flex
-  padding-left: calc(50% - 800px)
-  padding-right: calc(50% - 800px)
   background: #f1e4e6
+  position: relative
+  max-height: 764px
 
   &__img
     display: flex
+    flex-direction: column
+    justify-content: flex-end
     width: 50%
 
   &__photo
@@ -48,10 +53,11 @@ a
   &__text
     padding-left: 64px
     width: 50%
+    display: flex
+    align-items: center
 
   &__content
     padding-left: 16px
-    margin-top: 40%
     border-left: 12px solid #f16d7f
 
   &__heading
@@ -210,19 +216,22 @@ a
   margin-right: 11px
 
 .browse__btn
+  box-sizing: border-box
+  padding: 14px 0
+  text-align: center
   display: block
-  margin: 0 auto
   margin: 0 auto
   height: 48px
   width: 212px
+  line-height: 100%
   font-family: Lato
   font-size: 16px
-  color: #F26376
   border: 1px solid #F26376
   background-color: transparent
   margin-top: 48px
   cursor: pointer
   margin-bottom: 95px
+  color: #F26376
 
 .achives
   background: #222224

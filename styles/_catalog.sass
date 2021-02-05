@@ -167,3 +167,35 @@ summary
     cursor: pointer
     &::-webkit-details-marker
         display: none
+
+.pages
+    margin: 48px 0 96px 0
+    &__nav
+        box-sizing: border-box
+        margin: 0 auto
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 44px
+        width: 284px
+        border: 1px solid #EBEBEB
+        border-radius: 3px
+        .page-list
+            margin: 0 17px
+            display: flex
+            list-style-type: none
+            &__li
+                .number
+                    font-family: Lato
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 16px
+                    line-height: 19px
+                    color: #C4C4C4
+                .active-link
+                    color: #EF5B70
+
+            &__li:not(:last-child)
+                margin-right: 23px
+            &__li:nth-child(6)
+                margin: 0

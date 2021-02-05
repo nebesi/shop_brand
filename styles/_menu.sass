@@ -1,0 +1,74 @@
+
+.aside-menu
+    transition: all 4s
+    display: none
+    z-index: 2
+    position: absolute
+    top: 75px
+    right: -262px
+    bottom: 0px
+    max-width: 262px
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 16px 16px 0 33px
+    box-sizing: border-box
+    overflow: auto
+    max-height: 764px
+    .close-menu
+        outline: none
+        background: none
+        border: none
+        margin: 16px 16px 0 170px
+    .list-block
+        list-style-type: none
+    &__main-name
+        margin-bottom: 24px
+        margin-left: 1px
+        font-family: Lato
+        font-style: normal
+        font-weight: bold
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+    &__heading
+        margin-bottom: 12px
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #F16D7F
+    .list-block
+        margin-bottom: 20px
+        padding-left: 21.5px
+        &__li
+            .list-link
+                font-family: Lato
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 17px
+                color: #6F6E6E
+        &__li:not(:last-child)
+            padding-bottom: 11px
+
+.img-push
+    position: relative
+    width: 32px
+    height: 23px
+    display: block
+    padding-top: 3px
+    margin-right: 25px
+.img-push[open] + .aside-menu
+    display: block
+    transition: all 4s
+    z-index: 2
+    position: absolute
+    right: 0
+    max-width: 262px
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 16px 16px 0 33px
+    box-sizing: border-box
+    overflow: auto
+    max-height: 764px
