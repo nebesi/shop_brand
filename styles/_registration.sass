@@ -2,6 +2,7 @@
     padding-top: 64px
     display: flex
     &-form
+        width: 50%
         margin-right: 128px
         max-width: 360px
         &__block:nth-child(1)
@@ -32,8 +33,8 @@
             .details
                 outline: none
                 height: 45px
-                width: 360px
-                padding-left: 17.2px
+                max-width: 100%
+                padding: 0 17px
             .details:not(:last-child)
                 margin-bottom: 20px
         .hint
@@ -45,6 +46,8 @@
                 font-size: 13px
                 line-height: 16px
                 color: #B1B1B1
+        .btn-confirm:hover
+            background: #df5d6e
         .btn-confirm
             +styls()
             height: 50px
@@ -60,6 +63,7 @@
                 margin-right: 20px
             &__next
     .actuality
+        width: 50%
         &__heading
             font-family: Lato
             font-style: normal
@@ -95,5 +99,10 @@
 .gender-f
     margin-right: 10px
     margin-left: 20px
+.gender-o
+    margin-left: 20px
+    margin-right: 10px
+.gender-hidden, .text-hidden
+    display: none
 .gender-text
     +gender()

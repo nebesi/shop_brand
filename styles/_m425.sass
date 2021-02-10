@@ -1,0 +1,78 @@
+@media (max-width: 425px)
+    .center
+        padding-left: 15px
+        padding-right: 15px
+    .header
+        &__right
+            max-width: 32px
+            .link-icon
+                min-width: 100%
+            .link-icon:not(:first-child)
+                display: none
+    .promo
+        min-height: 363px
+        &__img
+            display: none
+        &__text
+            justify-content: center
+            width: 100%
+            padding: 0
+            .moving-el
+                .content
+                    animation: none
+    .sales
+        &__top
+            flex-direction: column
+            padding-bottom: 0
+            .sales__item
+                margin-right: 0
+                margin-bottom: 32px
+        &__bottom
+            .sales__item
+                .sales__img
+                    object-fit: cover
+                    height: 111px
+
+    .catalog__container
+        .catalog__item:not(:first-child)
+            margin-top: 15.62px
+
+    .form
+        width: 100%
+        &__field
+            .form__text
+                width: 70%
+            .form__btn
+                width: 30%
+
+    .catalog-heading
+        flex-direction: column
+        margin-bottom: 0
+        justify-content: space-evenly
+
+    .footer
+        flex-direction: column-reverse
+        .social
+            padding-top: 43px
+        .copy
+            padding-top: 40px
+            padding-bottom: 9px
+
+    .filter
+        padding-top: 24px
+        .checkbox
+            &-item
+                padding-right: 23px
+                font-size: 12px
+        &__details
+            .filter__name
+                margin-left: 0
+                .filter-active
+                    display: none
+                .filter__img
+                    width: 38px
+                    margin-left: 0
+                    height: 25px
+
+    .mt
+        margin-top: 0

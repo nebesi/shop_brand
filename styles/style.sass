@@ -40,7 +40,6 @@ a
 .promo
   display: flex
   background: #f1e4e6
-  position: relative
   max-height: 764px
 
   &__img
@@ -145,7 +144,7 @@ a
     font-size: 14px
     line-height: 17px
     color: #9F9F9F
-    padding-bottom: 48px
+    padding-bottom: 1 8px
 
   &__item
     position: relative
@@ -157,12 +156,6 @@ a
     background: #F8F8F8
     margin-top: 30px
     transition: .7s
-    &:nth-child(1)
-      margin-top: 0
-    &:nth-child(2)
-      margin-top: 0
-    &:nth-child(3)
-      margin-top: 0
   &__item:hover
     transform: scale(1.02)
 
@@ -315,7 +308,7 @@ a
   color: #222224
 
 .subscribe__container
-  max-height: 100%
+  min-height: 100%
   padding-top: 97px
   padding-bottom: 126px
   display: flex
@@ -437,82 +430,6 @@ a
 
   content: '/'
   padding-left: 5px
-.logo-main
-  transition: 2s
-.logo-main:hover
-  animation: transform 2s
-  animation-iteration-count: 1
 
-@media (max-width: 1080px)
-  .catalog__container
-    justify-content: space-around
-    align-items: baseline
-
-@media (max-width: 768px)
-  .center
-    padding-left: calc(50% - 384px)
-    padding-right: calc(50% - 384px)
-  .promo__text
-    padding-left: 39px
-    .moving-el
-      .content
-        &__heading
-          font-size: 44px
-        &__p
-          font-size: 24px
-
-  .sales
-    padding-top: 20px
-    padding-bottom: 154px
-  .browse__btn
-    margin-top: 48px
-    margin-bottom: 64px
-  .achives
-    padding-top: 48px
-    padding-bottom: 64px
-    &__container
-      flex-direction: column
-      align-items: center
-      .achives__item:not(:first-child)
-        margin-top: 48px
-      .achives__item
-        max-width: 360px
-        .achives__heading
-          padding-top: 19px
-  .subscribe
-    &__container
-      padding-top: 64px
-      padding-bottom: 140px
-      flex-direction: column
-      align-items: center
-      .form
-        margin-top: 48px
-
-  .sales
-    &__top
-      flex-direction: column
-
-@media (max-width: 600px)
-  .promo
-    height: 363px
-    &__img
-      display: none
-    &__text
-      padding: 0
-      width: 100%
-      margin: 0 auto
-      .moving-el
-        position: relative
-        max-width: 263px
-        margin: 0 auto
-        .content
-          animation: none
-          &__heading
-            font-size: 38px
-          &__p
-            font-size: 20px
-  .form
-    &__field
-      max-width: 60%
-
-@media (max-width: 375px)
+@import 'm768'
+@import 'm425'

@@ -1,0 +1,76 @@
+@media (max-width: 1023px)
+    .center
+        padding-left: calc(50% - 384px)
+        padding-right: calc(50% - 384px)
+
+    .promo
+        min-height: 367.57px
+        &__text
+            .moving-el
+                .content
+                    &__heading
+                        font-size: 44px
+                    &__p
+                        font-size: 24px
+    .catalog
+        &__container
+            justify-content: space-around
+            .catalog__item:nth-child(3)
+                margin-top: 30px
+    .achives
+        padding-top: 48px
+        padding-bottom: 64px
+        &__container
+            flex-direction: column
+            .achives__item
+                max-width: 360px
+                margin: 0 auto
+            .achives__item:not(:first-child)
+                margin-top: 48.37px
+    .subscribe
+        &__container
+            padding-top: 0
+            padding-bottom: 0
+            flex-direction: column
+            .subscribe__item, .form
+                margin: 0 auto
+                max-width: 359px
+            .subscribe__item
+                padding-top: 64px
+            .form
+                padding-top: 60px
+                padding-bottom: 140px
+                max-width: 359px
+    .registration
+        padding-top: 40px
+        flex-wrap: wrap
+        align-content: stretch
+        &-form
+            flex-grow: 1
+            max-width: 100%
+            margin-right: 22px
+            &__block
+                input
+                    max-width: 360px
+        .actuality
+            flex-grow: 1
+            flex-basis: 350px
+            &__heading
+                font-size: 16px
+                margin-bottom: 32px
+            &__text
+                font-size: 16px
+                line-height: 19,2px
+            &-block
+                &__list
+                    font-size: 16px
+
+    .gender-hidden, .text-hidden
+        display: block
+
+    .filter
+        justify-content: space-between
+        .checkbox
+            padding: 0
+            &-item:last-child
+                padding-right: 0
