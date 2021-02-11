@@ -74,3 +74,18 @@
             padding: 0
             &-item:last-child
                 padding-right: 0
+
+    .product
+        .catalog
+            &__container
+                justify-content: space-around
+                .canHide
+                    display: none
+                .mr:not(:last-child)
+                    margin-right: 0
+        &__info
+            .price-card
+                width: 100%
+                .np
+                    .checkbox-item:not(:last-child)
+                        margin-right: 22px
