@@ -1,26 +1,31 @@
 
 .aside-menu
-    transition: all 4s
-    display: none
-    z-index: 2
     position: absolute
-    top: 75px
-    right: -262px
-    bottom: 0px
+    z-index: 5
+    right: 0
     max-width: 262px
     background: #FFFFFF
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
     padding: 16px 16px 0 33px
     box-sizing: border-box
     overflow: auto
-    max-height: 764px
     .close-menu
+        transition: .3s
+        cursor: pointer
         outline: none
         background: none
         border: none
         margin: 16px 16px 0 170px
+    .close-menu:hover
+        transform: scale(1.1)
     .list-block
         list-style-type: none
+        &__li
+            transition: .4s
+            .list-link:hover
+                color: #F16D7F
+        &__li:hover
+            transform: scale(1.1)
     &__main-name
         margin-bottom: 24px
         margin-left: 1px
@@ -72,3 +77,29 @@
     box-sizing: border-box
     overflow: auto
     max-height: 764px
+
+.animation
+    animation: menu-animation 1s ease-in-out
+
+.menu-point
+    position: relative
+
+.dark-field
+    position: absolute
+    z-index: 5
+    width: 100vw
+    height: 100vh
+    background: rgba(0, 0, 0, 0.5)
+
+.top
+    top: 75px
+    height: 100vh
+
+.a-m-height
+    height: 100%
+
+.hide
+    top: -300%
+
+.stopscroll
+    overflow: hidden

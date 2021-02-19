@@ -10,6 +10,9 @@
   margin: 0
   padding: 0
 
+body
+  min-width: 320px
+
 a
   text-decoration: none
 
@@ -22,12 +25,17 @@ a
   margin: 0 auto
 
 .header
-  position: relative
-  height: 75px
-  background: #222222
   display: flex
   align-items: center
-  justify-content: space-between
+  z-index: 6
+  height: 75px
+  background: #222222
+  &__flex
+    width: 100%
+    justify-content: space-between
+    margin: 0
+    display: flex
+    align-items: center
   &__left
   &-search
     margin-left: 41px
@@ -38,15 +46,13 @@ a
     margin-right: 33px
 
 .promo
+  position: relative
   display: flex
   background: #f1e4e6
-  max-height: 764px
 
   &__img
-    animation: opacity 3.5s
     display: flex
-    flex-direction: column
-    justify-content: flex-end
+    animation: opacity 3.5s
     width: 50%
 
   &__photo
@@ -54,7 +60,6 @@ a
 
   &__text
     position: relative
-    padding-left: 64px
     width: 50%
     display: flex
     align-items: center
