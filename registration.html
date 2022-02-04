@@ -77,36 +77,36 @@
         </ul>
     </nav>
     <section class="registration center">
-        <form action="#" class="registration-form">
+        <form method="POST" action="form.php" class="registration-form">
             <div class="registration-form__block">
                 <h3 class="title-name">Your Name</h3>
-                <input type="text" placeholder="First Name" class="details">
-                <input type="text" placeholder="Last Name" class="details">
+                <input type="text" placeholder="First Name" class="details" name="fName">
+                <input type="text" placeholder="Last Name" class="details" name="lName">
             </div>
             <div class="registration-form__block">
 
 
-                <input id="gender-m" type="radio" name="gender" class="gender-m">
+                <input id="gender-m" type="radio" name="gender" class="gender-m" name="genderM">
                 <label class="gender-text" for="gender-m">Male</label>
 
-                <input id="gender-f" type="radio" name="gender" class="gender-f">
+                <input id="gender-f" type="radio" name="gender" class="gender-f" name="genderF">
                 <label class="gender-text" for="gender-f">Female</label>
 
-                <input id="gender-o" type="radio" name="gender" class="gender-o gender-hidden">
+                <input id="gender-o" type="radio" name="gender" class="gender-o gender-hidden" name="genderO">
                 <label class="gender-text text-hidden" for="gender-o">Other</label>
 
 
             </div>
             <div class="registration-form__block">
                 <h3 class="title-name">Login details</h3>
-                <input type="email" placeholder="Email" class="details">
-                <input type="password" placeholder="Password" class="details">
+                <input type="email" placeholder="Email" class="details" name="email">
+                <input type="password" placeholder="Password" class="details" name="password">
             </div>
             <div class="hint">
                 <p class="hint__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase
                     and lowercase letters</p>
             </div>
-            <button class="btn-confirm text" type="submit">
+            <button class="btn-confirm text" type="submit" name="submit-btn">
                 JOIN NOW
                 <svg class="btn-confirm__next" width="17" height="10" viewBox="0 0 17 10" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
